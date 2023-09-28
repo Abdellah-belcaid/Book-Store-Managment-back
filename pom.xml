@@ -14,7 +14,7 @@
     <name>book-managment-back</name>
     <description>book managment store</description>
     <properties>
-        <java.version>19</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
