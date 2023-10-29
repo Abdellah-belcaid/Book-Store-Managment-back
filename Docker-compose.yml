@@ -1,0 +1,17 @@
+services:
+  book-store-management-back:
+    container_name: book-store-management-back-container
+    build:
+      context: .
+      args:
+        CONTAINER_PORT: ${CONTAINER_PORT}
+    image: book-store-management-back:v1
+    restart: unless-stopped
+    env_file: .env
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080:"
+
+
+
